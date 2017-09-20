@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Temp_Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ft0-oL-qfk">
+                                <rect key="frame" x="137" y="216" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9gY-V3-oSH"/>
+                                    <constraint firstAttribute="width" constant="101" id="CgF-1A-KWU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="light"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mic-sA-h1h">
+                                <rect key="frame" x="124" y="271" width="127" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="LYD-Ti-Aas"/>
+                                    <constraint firstAttribute="height" constant="30" id="kSb-b2-IuY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Convert to F">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hoE-VN-faJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVr-Cn-Yh7">
+                                <rect key="frame" x="99" y="321" width="177" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="J4h-1o-7hV"/>
+                                    <constraint firstAttribute="width" constant="177" id="Kpx-QB-GPS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1B-4j-KMe">
+                                <rect key="frame" x="16" y="20" width="156" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2X3-he-IoK"/>
+                                    <constraint firstAttribute="width" constant="156" id="LK8-OB-bsy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68453926050307712" green="0.27208795553520182" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ft0-oL-qfk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-102.5" id="1uN-F4-FHG"/>
+                            <constraint firstItem="ft0-oL-qfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="865-su-4t4"/>
+                            <constraint firstItem="S1B-4j-KMe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="HPH-Cw-yKZ"/>
+                            <constraint firstItem="S1B-4j-KMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="JtA-WL-N9d"/>
+                            <constraint firstItem="ft0-oL-qfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MAY-ZV-GaR"/>
+                            <constraint firstItem="mic-sA-h1h" firstAttribute="top" secondItem="ft0-oL-qfk" secondAttribute="bottom" constant="25" id="QF3-n1-1mC"/>
+                            <constraint firstItem="mic-sA-h1h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="blu-GP-fhA"/>
+                            <constraint firstItem="ft0-oL-qfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eax-k8-weg"/>
+                            <constraint firstItem="fVr-Cn-Yh7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gec-0I-mnB"/>
+                            <constraint firstItem="ft0-oL-qfk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-102.5" id="mDQ-pE-YG9"/>
+                            <constraint firstItem="mic-sA-h1h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q18-8p-jCe"/>
+                            <constraint firstItem="mic-sA-h1h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wv3-Bb-m3A"/>
+                            <constraint firstItem="fVr-Cn-Yh7" firstAttribute="top" secondItem="mic-sA-h1h" secondAttribute="bottom" constant="20" id="ysW-C6-j7A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="fVr-Cn-Yh7" id="lNg-8j-bBN"/>
+                        <outlet property="entryTempTextField" destination="ft0-oL-qfk" id="UMq-QX-up9"/>
+                        <outlet property="numConversions" destination="S1B-4j-KMe" id="IMe-Hg-xaR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
